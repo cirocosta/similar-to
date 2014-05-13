@@ -1,11 +1,10 @@
-var _ = require('underscore');
-
 function isSimilarTo (a, b) {
+  'use strict';
+  var _ = require('underscore');
   var keysA, keysB;
 
   if (!(_.isObject(a) && _.isObject(b)))
     return true;
-
 
   if (_.isEqual(a, b)) return true;
 
