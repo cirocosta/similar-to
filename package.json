@@ -1,0 +1,16 @@
+{
+  "name": "similar-to",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": "",
+  "author": "Ciro S. Costa",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "~1.18.2",
+    "underscore": "~1.6.0"
+  }
+}
