@@ -1,16 +1,22 @@
 {
   "name": "similar-to",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A deepEqual a like that doesn't checks values. It's all about similarity :)",
   "main": "main.js",
   "scripts": {
     "test": "mocha test"
   },
-  "repository": "",
-  "author": "Ciro S. Costa",
+  "repository": "https://github.com/cirocosta/similar-to",
+  "author": {
+    "name": "Ciro S. Costa",
+    "email": "ciro9758@gmail.com",
+    "url": "https://github.com/cirocosta"
+  },
   "license": "MIT",
   "dependencies": {
-    "mocha": "~1.18.2",
     "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2"
   }
 }
