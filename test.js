@@ -13,40 +13,49 @@ describe('with SimilarTo,', function () {
     it('should be equal if both undefined', function () {
       assert(isSimilarTo(undefined, undefined));
     });
+  });
 
+  describe('non-empty objects', function () {
     it('should return true to identical objs', function () {
       var a = {a: 'a'};
       var b = {a: 'a'};
 
-      assert(isSimilarTo(a,b));
+      assert(isSimilarTo(a, b));
     });
 
-    it('should return true to similar objects', function () {
+    it('should return true to similar 1level objects', function () {
       var a = {a: 'a'};
       var b = {a: 'b'};
 
-      assert(isSimilarTo(a,b));
+      assert(isSimilarTo(a, b));
     });
 
     it('should return false to non-similar objects', function () {
       var a = {a: 'a'};
       var b = {b: 'b'};
 
-      assert(!isSimilarTo(a,b));
+      assert(!isSimilarTo(a, b));
     });
 
     it('should return true to 2layer similar objects', function () {
       var a = {a: {b: 'b'}};
       var b = {a: {b: 'c'}};
 
-      assert(isSimilarTo(a,b));
+      assert(isSimilarTo(a, b));
     });
 
     it('should return false to non-similar 2layer objects', function () {
       var a = {a: {b: 'a'}};
       var b = {a: {c: 'c'}};
 
-      assert(!isSimilarTo(a,b));
+      assert(!isSimilarTo(a, b));
+    });
+
+    it('should return false if one of them doesnt has all fields', function () {
+      var a = {a: {b: 'a'}};
+      var b = {a: {}};
+
+      assert(!isSimilarTo(a, b));
     });
   });
 
