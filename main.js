@@ -1,4 +1,4 @@
-function isSimilarTo (a, b) {
+function fullySimilar (a, b) {
   'use strict';
   var _ = require('underscore');
   var keysA, keysB;
@@ -14,7 +14,20 @@ function isSimilarTo (a, b) {
   if (!_.isEqual(keysA, keysB)) return false;
 
   for (var key in keysA)
-    return isSimilarTo(a[keysA[key]], b[keysA[key]]);
+    return fullySimilar(a[keysA[key]], b[keysA[key]]);
 }
 
-module.exports = isSimilarTo;
+// TODO
+function partiallySimilar (a, b) {
+  'use strict';
+  var _ = require('underscore');
+
+  if (_.isEqual(a, b)) return true;
+
+  return false;
+}
+
+module.exports = {
+  fullySimilar: fullySimilar,
+  partiallySimilar: partiallySimilar
+};
