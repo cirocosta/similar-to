@@ -6,17 +6,20 @@
   "scripts": {
     "test": "mocha test"
   },
-  "repository": "https://github.com/cirocosta/similar-to",
-  "author": {
-    "name": "Ciro S. Costa",
-    "email": "ciro9758@gmail.com",
-    "url": "https://github.com/cirocosta"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cirocosta/similar-to"
   },
   "license": "MIT",
-  "dependencies": {
-    "underscore": "~1.6.0"
+  "bugs": {
+    "url": "https://github.com/cirocosta/similar-to/issues"
   },
+  "homepage": "https://github.com/cirocosta/similar-to",
+  "author": "Ciro S. Costa <ciro9758@gmail.com> (http://www.cirocosta.com/)",
   "devDependencies": {
     "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "underscore": "~1.7.0"
   }
 }
