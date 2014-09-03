@@ -1,14 +1,16 @@
+'use strict';
+
 var assert = require('assert');
 var similarTo = require('./main.js');
-var _ = require('underscore');
+
 
 describe('SimilarTo,', function () {
 
-  describe('similarTo,', function () {
-    it('should be sane', function () {
-      assert(!!similarTo);
-    });
+  it('should be sane', function () {
+    assert(!!similarTo);
+  });
 
+  describe('FullSimilarity,', function () {
     describe('empty objects', function () {
       it('should be equal if both undefined', function () {
         assert(similarTo(undefined, undefined));
