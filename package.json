@@ -13,10 +13,10 @@
     "url": "https://github.com/cirocosta"
   },
   "license": "MIT",
-  "dependencies": {
-    "underscore": "~1.6.0"
-  },
   "devDependencies": {
     "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "underscore": "^1.7.0"
   }
 }
